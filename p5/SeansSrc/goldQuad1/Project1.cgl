@@ -1,0 +1,10 @@
+Error 00029. 0x140600 (Thread 0x0474):
+Access underrun: Attempt to access 4 byte(s) at 0x00D961F0-97604, that is at
+ offset 0-97604 in block 0x00D961F0 (size 4000).
+Call Tree:
+   0x0040C913(=Project1.exe:0x01:00B913) C:\f07\60\cpp\p5\goldQuad1\router.cpp#38
+   0x0040E25B(=Project1.exe:0x01:00D25B) C:\f07\60\cpp\p5\goldQuad1\router.cpp#178
+   0x00403E34(=Project1.exe:0x01:002E34) C:\f07\60\cpp\p5\goldQuad1\RouterRunner.cpp#255
+   0x3266FFD6(=CC3260.DLL:0x01:06EFD6)
+
+------------------------------------------

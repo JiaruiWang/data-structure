@@ -1,0 +1,9 @@
+Scores from p3 for Davis Sean Davis Steve 
+Note that format is: e-mail<comma>last name<comma>first name
+For example: ssdavis@ucdavis.edu,Davis,Sean
+
+Addresses used: davis@cs.ucdavis.edu ssdavis@ucdavis.edu   
+
+gen.cpp:
+Your ouput matched Sean's, so you will receive 9 points.
+You had no memory leaks, so you will receive 1 more point for 10/10 points.

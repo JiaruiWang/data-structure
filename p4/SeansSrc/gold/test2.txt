@@ -1,0 +1,832 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  ms/call  ms/call  name    
+ 50.01      0.09     0.09        1    90.02   147.66  Speller::check(char**, int, int*, int*)
+ 11.11      0.11     0.02   612224     0.00     0.00  QuadraticHashTable<6>::findPos(char const*, unsigned int) const
+ 11.11      0.13     0.02   475216     0.00     0.00  QuadraticHashTable<4>::findPos(char const*, unsigned int) const
+ 11.11      0.15     0.02        1    20.01    20.01  readDocument(char**, int, int, int)
+  5.56      0.16     0.01   452504     0.00     0.00  QuadraticHashTable<4>::find(char const*, unsigned int) const
+  5.56      0.17     0.01   339005     0.00     0.00  QuadraticHashTable<5>::findPos(char const*, unsigned int) const
+  5.56      0.18     0.01        1    10.00    12.38  Speller::Speller(char**, int)
+  0.00      0.18     0.00   583146     0.00     0.00  QuadraticHashTable<6>::find(char const*, unsigned int) const
+  0.00      0.18     0.00   354558     0.00     0.00  QuadraticHashTable<7>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00   337646     0.00     0.00  QuadraticHashTable<7>::find(char const*, unsigned int) const
+  0.00      0.18     0.00   322882     0.00     0.00  QuadraticHashTable<5>::find(char const*, unsigned int) const
+  0.00      0.18     0.00   124192     0.00     0.00  CharArray<6>::CharArray()
+  0.00      0.18     0.00   102455     0.00     0.00  QuadraticHashTable<3>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00    97603     0.00     0.00  QuadraticHashTable<3>::find(char const*, unsigned int) const
+  0.00      0.18     0.00    97002     0.00     0.00  CharArray<4>::CharArray()
+  0.00      0.18     0.00    85903     0.00     0.00  QuadraticHashTable<8>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00    81767     0.00     0.00  QuadraticHashTable<8>::find(char const*, unsigned int) const
+  0.00      0.18     0.00    79938     0.00     0.00  QuadraticHashTable<9>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00    76132     0.00     0.00  QuadraticHashTable<9>::find(char const*, unsigned int) const
+  0.00      0.18     0.00    72231     0.00     0.00  CharArray<7>::CharArray()
+  0.00      0.18     0.00    68861     0.00     0.00  CharArray<5>::CharArray()
+  0.00      0.18     0.00    29795     0.00     0.00  QuadraticHashTable<2>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00    29078     0.00     0.00  QuadraticHashTable<6>::insert(char const*, unsigned int)
+  0.00      0.18     0.00    28452     0.00     0.00  QuadraticHashTable<2>::find(char const*, unsigned int) const
+  0.00      0.18     0.00    22712     0.00     0.00  QuadraticHashTable<4>::insert(char const*, unsigned int)
+  0.00      0.18     0.00    20722     0.00     0.00  CharArray<3>::CharArray()
+  0.00      0.18     0.00    17664     0.00     0.00  CharArray<8>::CharArray()
+  0.00      0.18     0.00    16912     0.00     0.00  QuadraticHashTable<7>::insert(char const*, unsigned int)
+  0.00      0.18     0.00    16255     0.00     0.00  CharArray<9>::CharArray()
+  0.00      0.18     0.00    16123     0.00     0.00  QuadraticHashTable<5>::insert(char const*, unsigned int)
+  0.00      0.18     0.00    12493     0.00     0.00  QuadraticHashTable<10>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00    11873     0.00     0.00  QuadraticHashTable<10>::find(char const*, unsigned int) const
+  0.00      0.18     0.00     7298     0.00     0.00  QuadraticHashTable<11>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00     6931     0.00     0.00  QuadraticHashTable<11>::find(char const*, unsigned int) const
+  0.00      0.18     0.00     5735     0.00     0.00  CharArray<2>::CharArray()
+  0.00      0.18     0.00     4852     0.00     0.00  QuadraticHashTable<3>::insert(char const*, unsigned int)
+  0.00      0.18     0.00     4136     0.00     0.00  QuadraticHashTable<8>::insert(char const*, unsigned int)
+  0.00      0.18     0.00     3806     0.00     0.00  QuadraticHashTable<9>::insert(char const*, unsigned int)
+  0.00      0.18     0.00     2648     0.00     0.00  CharArray<10>::CharArray()
+  0.00      0.18     0.00     1567     0.00     0.00  CharArray<11>::CharArray()
+  0.00      0.18     0.00     1343     0.00     0.00  QuadraticHashTable<2>::insert(char const*, unsigned int)
+  0.00      0.18     0.00     1115     0.00     0.00  QuadraticHashTable<12>::findPos(char const*, unsigned int) const
+  0.00      0.18     0.00     1064     0.00     0.00  QuadraticHashTable<12>::find(char const*, unsigned int) const
+  0.00      0.18     0.00      620     0.00     0.00  QuadraticHashTable<10>::insert(char const*, unsigned int)
+  0.00      0.18     0.00      367     0.00     0.00  QuadraticHashTable<11>::insert(char const*, unsigned int)
+  0.00      0.18     0.00      217     0.00     0.00  CharArray<12>::CharArray()
+  0.00      0.18     0.00       51     0.00     0.00  QuadraticHashTable<12>::insert(char const*, unsigned int)
+  0.00      0.18     0.00       42     0.00     0.00  CharArray<13>::CharArray()
+  0.00      0.18     0.00       18     0.00     0.00  operator delete[](void*)
+  0.00      0.18     0.00       18     0.00     0.00  operator new[](unsigned long)
+  0.00      0.18     0.00       13     0.00     0.00  operator delete(void*)
+  0.00      0.18     0.00       13     0.00     0.00  operator new(unsigned long)
+  0.00      0.18     0.00       12     0.00     0.00  HashTable::HashTable()
+  0.00      0.18     0.00       12     0.00     0.00  HashTable::~HashTable()
+  0.00      0.18     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN7SpellerC2EPPci
+  0.00      0.18     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN8CPUTimerC2Ev
+  0.00      0.18     0.00        1     0.00     0.00  _GLOBAL__sub_I_maxRAM
+  0.00      0.18     0.00        1     0.00     0.00  readWrongs(int*, int, int, int, int&)
+  0.00      0.18     0.00        1     0.00     0.00  checkAnswers(int*, int, int*, int)
+  0.00      0.18     0.00        1     0.00     0.00  readDictionary(char*, char**, int)
+  0.00      0.18     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.18     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.18     0.00        1     0.00     0.00  __static_initialization_and_destruction_0(int, int)
+  0.00      0.18     0.00        1     0.00     0.00  cleanup(char**, char*, char**, int*, int*)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<10>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<10>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<10>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<11>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<11>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<11>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<12>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<12>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<12>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<13>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<13>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<13>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<2>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<2>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<2>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<3>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<3>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<3>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<4>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<4>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<4>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<5>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<5>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<5>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<6>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<6>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<6>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<7>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<7>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<7>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<8>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<8>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<8>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<9>::QuadraticHashTable(int)
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<9>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  QuadraticHashTable<9>::~QuadraticHashTable()
+  0.00      0.18     0.00        1     0.00     0.00  Speller::~Speller()
+  0.00      0.18     0.00        1     0.00     0.00  CPUTimer::cur_CPUTime()
+  0.00      0.18     0.00        1     0.00     0.00  CPUTimer::CPUTimer()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 5.55% of 0.18 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[1]    100.0    0.00    0.18                 main [1]
+                0.09    0.06       1/1           Speller::check(char**, int, int*, int*) [2]
+                0.02    0.00       1/1           readDocument(char**, int, int, int) [6]
+                0.01    0.00       1/1           Speller::Speller(char**, int) [8]
+                0.00    0.00       4/18          operator new[](unsigned long) [58]
+                0.00    0.00       1/1           readDictionary(char*, char**, int) [68]
+                0.00    0.00       1/1           readWrongs(int*, int, int, int, int&) [66]
+                0.00    0.00       1/1           CPUTimer::CPUTimer() [111]
+                0.00    0.00       1/13          operator new(unsigned long) [60]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/1           CPUTimer::cur_CPUTime() [110]
+                0.00    0.00       1/1           checkAnswers(int*, int, int*, int) [67]
+                0.00    0.00       1/1           cleanup(char**, char*, char**, int*, int*) [72]
+                0.00    0.00       1/1           Speller::~Speller() [109]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.09    0.06       1/1           main [1]
+[2]     82.0    0.09    0.06       1         Speller::check(char**, int, int*, int*) [2]
+                0.01    0.02  452504/452504      QuadraticHashTable<4>::find(char const*, unsigned int) const [3]
+                0.00    0.02  583146/583146      QuadraticHashTable<6>::find(char const*, unsigned int) const [7]
+                0.00    0.01  322882/322882      QuadraticHashTable<5>::find(char const*, unsigned int) const [10]
+                0.00    0.00  337646/337646      QuadraticHashTable<7>::find(char const*, unsigned int) const [22]
+                0.00    0.00   97603/97603       QuadraticHashTable<3>::find(char const*, unsigned int) const [25]
+                0.00    0.00   81767/81767       QuadraticHashTable<8>::find(char const*, unsigned int) const [28]
+                0.00    0.00   76132/76132       QuadraticHashTable<9>::find(char const*, unsigned int) const [30]
+                0.00    0.00   28452/28452       QuadraticHashTable<2>::find(char const*, unsigned int) const [34]
+                0.00    0.00   11873/11873       QuadraticHashTable<10>::find(char const*, unsigned int) const [40]
+                0.00    0.00    6931/6931        QuadraticHashTable<11>::find(char const*, unsigned int) const [42]
+                0.00    0.00    1064/1064        QuadraticHashTable<12>::find(char const*, unsigned int) const [51]
+-----------------------------------------------
+                0.01    0.02  452504/452504      Speller::check(char**, int, int*, int*) [2]
+[3]     16.1    0.01    0.02  452504         QuadraticHashTable<4>::find(char const*, unsigned int) const [3]
+                0.02    0.00  452504/475216      QuadraticHashTable<4>::findPos(char const*, unsigned int) const [5]
+-----------------------------------------------
+                0.00    0.00   29078/612224      QuadraticHashTable<6>::insert(char const*, unsigned int) [12]
+                0.02    0.00  583146/612224      QuadraticHashTable<6>::find(char const*, unsigned int) const [7]
+[4]     11.1    0.02    0.00  612224         QuadraticHashTable<6>::findPos(char const*, unsigned int) const [4]
+-----------------------------------------------
+                0.00    0.00   22712/475216      QuadraticHashTable<4>::insert(char const*, unsigned int) [11]
+                0.02    0.00  452504/475216      QuadraticHashTable<4>::find(char const*, unsigned int) const [3]
+[5]     11.1    0.02    0.00  475216         QuadraticHashTable<4>::findPos(char const*, unsigned int) const [5]
+-----------------------------------------------
+                0.02    0.00       1/1           main [1]
+[6]     11.1    0.02    0.00       1         readDocument(char**, int, int, int) [6]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.02  583146/583146      Speller::check(char**, int, int*, int*) [2]
+[7]     10.6    0.00    0.02  583146         QuadraticHashTable<6>::find(char const*, unsigned int) const [7]
+                0.02    0.00  583146/612224      QuadraticHashTable<6>::findPos(char const*, unsigned int) const [4]
+-----------------------------------------------
+                0.01    0.00       1/1           main [1]
+[8]      6.9    0.01    0.00       1         Speller::Speller(char**, int) [8]
+                0.00    0.00   22712/22712       QuadraticHashTable<4>::insert(char const*, unsigned int) [11]
+                0.00    0.00   29078/29078       QuadraticHashTable<6>::insert(char const*, unsigned int) [12]
+                0.00    0.00   16123/16123       QuadraticHashTable<5>::insert(char const*, unsigned int) [13]
+                0.00    0.00   16912/16912       QuadraticHashTable<7>::insert(char const*, unsigned int) [37]
+                0.00    0.00    4852/4852        QuadraticHashTable<3>::insert(char const*, unsigned int) [44]
+                0.00    0.00    4136/4136        QuadraticHashTable<8>::insert(char const*, unsigned int) [45]
+                0.00    0.00    3806/3806        QuadraticHashTable<9>::insert(char const*, unsigned int) [46]
+                0.00    0.00    1343/1343        QuadraticHashTable<2>::insert(char const*, unsigned int) [49]
+                0.00    0.00     620/620         QuadraticHashTable<10>::insert(char const*, unsigned int) [52]
+                0.00    0.00     367/367         QuadraticHashTable<11>::insert(char const*, unsigned int) [53]
+                0.00    0.00      51/51          QuadraticHashTable<12>::insert(char const*, unsigned int) [55]
+                0.00    0.00      12/13          operator new(unsigned long) [60]
+                0.00    0.00       1/1           QuadraticHashTable<2>::QuadraticHashTable(int) [85]
+                0.00    0.00       1/1           QuadraticHashTable<3>::QuadraticHashTable(int) [88]
+                0.00    0.00       1/1           QuadraticHashTable<4>::QuadraticHashTable(int) [91]
+                0.00    0.00       1/1           QuadraticHashTable<5>::QuadraticHashTable(int) [94]
+                0.00    0.00       1/1           QuadraticHashTable<6>::QuadraticHashTable(int) [97]
+                0.00    0.00       1/1           QuadraticHashTable<7>::QuadraticHashTable(int) [100]
+                0.00    0.00       1/1           QuadraticHashTable<8>::QuadraticHashTable(int) [103]
+                0.00    0.00       1/1           QuadraticHashTable<9>::QuadraticHashTable(int) [106]
+                0.00    0.00       1/1           QuadraticHashTable<10>::QuadraticHashTable(int) [73]
+                0.00    0.00       1/1           QuadraticHashTable<11>::QuadraticHashTable(int) [76]
+                0.00    0.00       1/1           QuadraticHashTable<12>::QuadraticHashTable(int) [79]
+                0.00    0.00       1/1           QuadraticHashTable<13>::QuadraticHashTable(int) [82]
+-----------------------------------------------
+                0.00    0.00   16123/339005      QuadraticHashTable<5>::insert(char const*, unsigned int) [13]
+                0.01    0.00  322882/339005      QuadraticHashTable<5>::find(char const*, unsigned int) const [10]
+[9]      5.6    0.01    0.00  339005         QuadraticHashTable<5>::findPos(char const*, unsigned int) const [9]
+-----------------------------------------------
+                0.00    0.01  322882/322882      Speller::check(char**, int, int*, int*) [2]
+[10]     5.3    0.00    0.01  322882         QuadraticHashTable<5>::find(char const*, unsigned int) const [10]
+                0.01    0.00  322882/339005      QuadraticHashTable<5>::findPos(char const*, unsigned int) const [9]
+-----------------------------------------------
+                0.00    0.00   22712/22712       Speller::Speller(char**, int) [8]
+[11]     0.5    0.00    0.00   22712         QuadraticHashTable<4>::insert(char const*, unsigned int) [11]
+                0.00    0.00   22712/475216      QuadraticHashTable<4>::findPos(char const*, unsigned int) const [5]
+-----------------------------------------------
+                0.00    0.00   29078/29078       Speller::Speller(char**, int) [8]
+[12]     0.5    0.00    0.00   29078         QuadraticHashTable<6>::insert(char const*, unsigned int) [12]
+                0.00    0.00   29078/612224      QuadraticHashTable<6>::findPos(char const*, unsigned int) const [4]
+-----------------------------------------------
+                0.00    0.00   16123/16123       Speller::Speller(char**, int) [8]
+[13]     0.3    0.00    0.00   16123         QuadraticHashTable<5>::insert(char const*, unsigned int) [13]
+                0.00    0.00   16123/339005      QuadraticHashTable<5>::findPos(char const*, unsigned int) const [9]
+-----------------------------------------------
+                0.00    0.00   16912/354558      QuadraticHashTable<7>::insert(char const*, unsigned int) [37]
+                0.00    0.00  337646/354558      QuadraticHashTable<7>::find(char const*, unsigned int) const [22]
+[21]     0.0    0.00    0.00  354558         QuadraticHashTable<7>::findPos(char const*, unsigned int) const [21]
+-----------------------------------------------
+                0.00    0.00  337646/337646      Speller::check(char**, int, int*, int*) [2]
+[22]     0.0    0.00    0.00  337646         QuadraticHashTable<7>::find(char const*, unsigned int) const [22]
+                0.00    0.00  337646/354558      QuadraticHashTable<7>::findPos(char const*, unsigned int) const [21]
+-----------------------------------------------
+                0.00    0.00  124192/124192      QuadraticHashTable<6>::QuadraticHashTable(int) [97]
+[23]     0.0    0.00    0.00  124192         CharArray<6>::CharArray() [23]
+-----------------------------------------------
+                0.00    0.00    4852/102455      QuadraticHashTable<3>::insert(char const*, unsigned int) [44]
+                0.00    0.00   97603/102455      QuadraticHashTable<3>::find(char const*, unsigned int) const [25]
+[24]     0.0    0.00    0.00  102455         QuadraticHashTable<3>::findPos(char const*, unsigned int) const [24]
+-----------------------------------------------
+                0.00    0.00   97603/97603       Speller::check(char**, int, int*, int*) [2]
+[25]     0.0    0.00    0.00   97603         QuadraticHashTable<3>::find(char const*, unsigned int) const [25]
+                0.00    0.00   97603/102455      QuadraticHashTable<3>::findPos(char const*, unsigned int) const [24]
+-----------------------------------------------
+                0.00    0.00   97002/97002       QuadraticHashTable<4>::QuadraticHashTable(int) [91]
+[26]     0.0    0.00    0.00   97002         CharArray<4>::CharArray() [26]
+-----------------------------------------------
+                0.00    0.00    4136/85903       QuadraticHashTable<8>::insert(char const*, unsigned int) [45]
+                0.00    0.00   81767/85903       QuadraticHashTable<8>::find(char const*, unsigned int) const [28]
+[27]     0.0    0.00    0.00   85903         QuadraticHashTable<8>::findPos(char const*, unsigned int) const [27]
+-----------------------------------------------
+                0.00    0.00   81767/81767       Speller::check(char**, int, int*, int*) [2]
+[28]     0.0    0.00    0.00   81767         QuadraticHashTable<8>::find(char const*, unsigned int) const [28]
+                0.00    0.00   81767/85903       QuadraticHashTable<8>::findPos(char const*, unsigned int) const [27]
+-----------------------------------------------
+                0.00    0.00    3806/79938       QuadraticHashTable<9>::insert(char const*, unsigned int) [46]
+                0.00    0.00   76132/79938       QuadraticHashTable<9>::find(char const*, unsigned int) const [30]
+[29]     0.0    0.00    0.00   79938         QuadraticHashTable<9>::findPos(char const*, unsigned int) const [29]
+-----------------------------------------------
+                0.00    0.00   76132/76132       Speller::check(char**, int, int*, int*) [2]
+[30]     0.0    0.00    0.00   76132         QuadraticHashTable<9>::find(char const*, unsigned int) const [30]
+                0.00    0.00   76132/79938       QuadraticHashTable<9>::findPos(char const*, unsigned int) const [29]
+-----------------------------------------------
+                0.00    0.00   72231/72231       QuadraticHashTable<7>::QuadraticHashTable(int) [100]
+[31]     0.0    0.00    0.00   72231         CharArray<7>::CharArray() [31]
+-----------------------------------------------
+                0.00    0.00   68861/68861       QuadraticHashTable<5>::QuadraticHashTable(int) [94]
+[32]     0.0    0.00    0.00   68861         CharArray<5>::CharArray() [32]
+-----------------------------------------------
+                0.00    0.00    1343/29795       QuadraticHashTable<2>::insert(char const*, unsigned int) [49]
+                0.00    0.00   28452/29795       QuadraticHashTable<2>::find(char const*, unsigned int) const [34]
+[33]     0.0    0.00    0.00   29795         QuadraticHashTable<2>::findPos(char const*, unsigned int) const [33]
+-----------------------------------------------
+                0.00    0.00   28452/28452       Speller::check(char**, int, int*, int*) [2]
+[34]     0.0    0.00    0.00   28452         QuadraticHashTable<2>::find(char const*, unsigned int) const [34]
+                0.00    0.00   28452/29795       QuadraticHashTable<2>::findPos(char const*, unsigned int) const [33]
+-----------------------------------------------
+                0.00    0.00   20722/20722       QuadraticHashTable<3>::QuadraticHashTable(int) [88]
+[35]     0.0    0.00    0.00   20722         CharArray<3>::CharArray() [35]
+-----------------------------------------------
+                0.00    0.00   17664/17664       QuadraticHashTable<8>::QuadraticHashTable(int) [103]
+[36]     0.0    0.00    0.00   17664         CharArray<8>::CharArray() [36]
+-----------------------------------------------
+                0.00    0.00   16912/16912       Speller::Speller(char**, int) [8]
+[37]     0.0    0.00    0.00   16912         QuadraticHashTable<7>::insert(char const*, unsigned int) [37]
+                0.00    0.00   16912/354558      QuadraticHashTable<7>::findPos(char const*, unsigned int) const [21]
+-----------------------------------------------
+                0.00    0.00   16255/16255       QuadraticHashTable<9>::QuadraticHashTable(int) [106]
+[38]     0.0    0.00    0.00   16255         CharArray<9>::CharArray() [38]
+-----------------------------------------------
+                0.00    0.00     620/12493       QuadraticHashTable<10>::insert(char const*, unsigned int) [52]
+                0.00    0.00   11873/12493       QuadraticHashTable<10>::find(char const*, unsigned int) const [40]
+[39]     0.0    0.00    0.00   12493         QuadraticHashTable<10>::findPos(char const*, unsigned int) const [39]
+-----------------------------------------------
+                0.00    0.00   11873/11873       Speller::check(char**, int, int*, int*) [2]
+[40]     0.0    0.00    0.00   11873         QuadraticHashTable<10>::find(char const*, unsigned int) const [40]
+                0.00    0.00   11873/12493       QuadraticHashTable<10>::findPos(char const*, unsigned int) const [39]
+-----------------------------------------------
+                0.00    0.00     367/7298        QuadraticHashTable<11>::insert(char const*, unsigned int) [53]
+                0.00    0.00    6931/7298        QuadraticHashTable<11>::find(char const*, unsigned int) const [42]
+[41]     0.0    0.00    0.00    7298         QuadraticHashTable<11>::findPos(char const*, unsigned int) const [41]
+-----------------------------------------------
+                0.00    0.00    6931/6931        Speller::check(char**, int, int*, int*) [2]
+[42]     0.0    0.00    0.00    6931         QuadraticHashTable<11>::find(char const*, unsigned int) const [42]
+                0.00    0.00    6931/7298        QuadraticHashTable<11>::findPos(char const*, unsigned int) const [41]
+-----------------------------------------------
+                0.00    0.00    5735/5735        QuadraticHashTable<2>::QuadraticHashTable(int) [85]
+[43]     0.0    0.00    0.00    5735         CharArray<2>::CharArray() [43]
+-----------------------------------------------
+                0.00    0.00    4852/4852        Speller::Speller(char**, int) [8]
+[44]     0.0    0.00    0.00    4852         QuadraticHashTable<3>::insert(char const*, unsigned int) [44]
+                0.00    0.00    4852/102455      QuadraticHashTable<3>::findPos(char const*, unsigned int) const [24]
+-----------------------------------------------
+                0.00    0.00    4136/4136        Speller::Speller(char**, int) [8]
+[45]     0.0    0.00    0.00    4136         QuadraticHashTable<8>::insert(char const*, unsigned int) [45]
+                0.00    0.00    4136/85903       QuadraticHashTable<8>::findPos(char const*, unsigned int) const [27]
+-----------------------------------------------
+                0.00    0.00    3806/3806        Speller::Speller(char**, int) [8]
+[46]     0.0    0.00    0.00    3806         QuadraticHashTable<9>::insert(char const*, unsigned int) [46]
+                0.00    0.00    3806/79938       QuadraticHashTable<9>::findPos(char const*, unsigned int) const [29]
+-----------------------------------------------
+                0.00    0.00    2648/2648        QuadraticHashTable<10>::QuadraticHashTable(int) [73]
+[47]     0.0    0.00    0.00    2648         CharArray<10>::CharArray() [47]
+-----------------------------------------------
+                0.00    0.00    1567/1567        QuadraticHashTable<11>::QuadraticHashTable(int) [76]
+[48]     0.0    0.00    0.00    1567         CharArray<11>::CharArray() [48]
+-----------------------------------------------
+                0.00    0.00    1343/1343        Speller::Speller(char**, int) [8]
+[49]     0.0    0.00    0.00    1343         QuadraticHashTable<2>::insert(char const*, unsigned int) [49]
+                0.00    0.00    1343/29795       QuadraticHashTable<2>::findPos(char const*, unsigned int) const [33]
+-----------------------------------------------
+                0.00    0.00      51/1115        QuadraticHashTable<12>::insert(char const*, unsigned int) [55]
+                0.00    0.00    1064/1115        QuadraticHashTable<12>::find(char const*, unsigned int) const [51]
+[50]     0.0    0.00    0.00    1115         QuadraticHashTable<12>::findPos(char const*, unsigned int) const [50]
+-----------------------------------------------
+                0.00    0.00    1064/1064        Speller::check(char**, int, int*, int*) [2]
+[51]     0.0    0.00    0.00    1064         QuadraticHashTable<12>::find(char const*, unsigned int) const [51]
+                0.00    0.00    1064/1115        QuadraticHashTable<12>::findPos(char const*, unsigned int) const [50]
+-----------------------------------------------
+                0.00    0.00     620/620         Speller::Speller(char**, int) [8]
+[52]     0.0    0.00    0.00     620         QuadraticHashTable<10>::insert(char const*, unsigned int) [52]
+                0.00    0.00     620/12493       QuadraticHashTable<10>::findPos(char const*, unsigned int) const [39]
+-----------------------------------------------
+                0.00    0.00     367/367         Speller::Speller(char**, int) [8]
+[53]     0.0    0.00    0.00     367         QuadraticHashTable<11>::insert(char const*, unsigned int) [53]
+                0.00    0.00     367/7298        QuadraticHashTable<11>::findPos(char const*, unsigned int) const [41]
+-----------------------------------------------
+                0.00    0.00     217/217         QuadraticHashTable<12>::QuadraticHashTable(int) [79]
+[54]     0.0    0.00    0.00     217         CharArray<12>::CharArray() [54]
+-----------------------------------------------
+                0.00    0.00      51/51          Speller::Speller(char**, int) [8]
+[55]     0.0    0.00    0.00      51         QuadraticHashTable<12>::insert(char const*, unsigned int) [55]
+                0.00    0.00      51/1115        QuadraticHashTable<12>::findPos(char const*, unsigned int) const [50]
+-----------------------------------------------
+                0.00    0.00      42/42          QuadraticHashTable<13>::QuadraticHashTable(int) [82]
+[56]     0.0    0.00    0.00      42         CharArray<13>::CharArray() [56]
+-----------------------------------------------
+                0.00    0.00       1/18          QuadraticHashTable<13>::~QuadraticHashTable() [84]
+                0.00    0.00       1/18          QuadraticHashTable<12>::~QuadraticHashTable() [81]
+                0.00    0.00       1/18          QuadraticHashTable<11>::~QuadraticHashTable() [78]
+                0.00    0.00       1/18          QuadraticHashTable<10>::~QuadraticHashTable() [75]
+                0.00    0.00       1/18          QuadraticHashTable<9>::~QuadraticHashTable() [108]
+                0.00    0.00       1/18          QuadraticHashTable<8>::~QuadraticHashTable() [105]
+                0.00    0.00       1/18          QuadraticHashTable<7>::~QuadraticHashTable() [102]
+                0.00    0.00       1/18          QuadraticHashTable<6>::~QuadraticHashTable() [99]
+                0.00    0.00       1/18          QuadraticHashTable<5>::~QuadraticHashTable() [96]
+                0.00    0.00       1/18          QuadraticHashTable<4>::~QuadraticHashTable() [93]
+                0.00    0.00       1/18          QuadraticHashTable<3>::~QuadraticHashTable() [90]
+                0.00    0.00       1/18          QuadraticHashTable<2>::~QuadraticHashTable() [87]
+                0.00    0.00       1/18          main [1]
+                0.00    0.00       5/18          cleanup(char**, char*, char**, int*, int*) [72]
+[57]     0.0    0.00    0.00      18         operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/18          QuadraticHashTable<2>::QuadraticHashTable(int) [85]
+                0.00    0.00       1/18          QuadraticHashTable<3>::QuadraticHashTable(int) [88]
+                0.00    0.00       1/18          QuadraticHashTable<4>::QuadraticHashTable(int) [91]
+                0.00    0.00       1/18          QuadraticHashTable<5>::QuadraticHashTable(int) [94]
+                0.00    0.00       1/18          QuadraticHashTable<6>::QuadraticHashTable(int) [97]
+                0.00    0.00       1/18          QuadraticHashTable<7>::QuadraticHashTable(int) [100]
+                0.00    0.00       1/18          QuadraticHashTable<8>::QuadraticHashTable(int) [103]
+                0.00    0.00       1/18          QuadraticHashTable<9>::QuadraticHashTable(int) [106]
+                0.00    0.00       1/18          QuadraticHashTable<10>::QuadraticHashTable(int) [73]
+                0.00    0.00       1/18          QuadraticHashTable<11>::QuadraticHashTable(int) [76]
+                0.00    0.00       1/18          QuadraticHashTable<12>::QuadraticHashTable(int) [79]
+                0.00    0.00       1/18          QuadraticHashTable<13>::QuadraticHashTable(int) [82]
+                0.00    0.00       1/18          readDictionary(char*, char**, int) [68]
+                0.00    0.00       1/18          readDocument(char**, int, int, int) [6]
+                0.00    0.00       4/18          main [1]
+[58]     0.0    0.00    0.00      18         operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/13          QuadraticHashTable<13>::~QuadraticHashTable() [83]
+                0.00    0.00       1/13          QuadraticHashTable<12>::~QuadraticHashTable() [80]
+                0.00    0.00       1/13          QuadraticHashTable<11>::~QuadraticHashTable() [77]
+                0.00    0.00       1/13          QuadraticHashTable<10>::~QuadraticHashTable() [74]
+                0.00    0.00       1/13          QuadraticHashTable<9>::~QuadraticHashTable() [107]
+                0.00    0.00       1/13          QuadraticHashTable<8>::~QuadraticHashTable() [104]
+                0.00    0.00       1/13          QuadraticHashTable<7>::~QuadraticHashTable() [101]
+                0.00    0.00       1/13          QuadraticHashTable<6>::~QuadraticHashTable() [98]
+                0.00    0.00       1/13          QuadraticHashTable<5>::~QuadraticHashTable() [95]
+                0.00    0.00       1/13          QuadraticHashTable<4>::~QuadraticHashTable() [92]
+                0.00    0.00       1/13          QuadraticHashTable<3>::~QuadraticHashTable() [89]
+                0.00    0.00       1/13          QuadraticHashTable<2>::~QuadraticHashTable() [86]
+                0.00    0.00       1/13          main [1]
+[59]     0.0    0.00    0.00      13         operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/13          main [1]
+                0.00    0.00      12/13          Speller::Speller(char**, int) [8]
+[60]     0.0    0.00    0.00      13         operator new(unsigned long) [60]
+-----------------------------------------------
+                0.00    0.00       1/12          QuadraticHashTable<2>::QuadraticHashTable(int) [85]
+                0.00    0.00       1/12          QuadraticHashTable<3>::QuadraticHashTable(int) [88]
+                0.00    0.00       1/12          QuadraticHashTable<4>::QuadraticHashTable(int) [91]
+                0.00    0.00       1/12          QuadraticHashTable<5>::QuadraticHashTable(int) [94]
+                0.00    0.00       1/12          QuadraticHashTable<6>::QuadraticHashTable(int) [97]
+                0.00    0.00       1/12          QuadraticHashTable<7>::QuadraticHashTable(int) [100]
+                0.00    0.00       1/12          QuadraticHashTable<8>::QuadraticHashTable(int) [103]
+                0.00    0.00       1/12          QuadraticHashTable<9>::QuadraticHashTable(int) [106]
+                0.00    0.00       1/12          QuadraticHashTable<10>::QuadraticHashTable(int) [73]
+                0.00    0.00       1/12          QuadraticHashTable<11>::QuadraticHashTable(int) [76]
+                0.00    0.00       1/12          QuadraticHashTable<12>::QuadraticHashTable(int) [79]
+                0.00    0.00       1/12          QuadraticHashTable<13>::QuadraticHashTable(int) [82]
+[61]     0.0    0.00    0.00      12         HashTable::HashTable() [61]
+-----------------------------------------------
+                0.00    0.00       1/12          QuadraticHashTable<13>::~QuadraticHashTable() [84]
+                0.00    0.00       1/12          QuadraticHashTable<12>::~QuadraticHashTable() [81]
+                0.00    0.00       1/12          QuadraticHashTable<11>::~QuadraticHashTable() [78]
+                0.00    0.00       1/12          QuadraticHashTable<10>::~QuadraticHashTable() [75]
+                0.00    0.00       1/12          QuadraticHashTable<9>::~QuadraticHashTable() [108]
+                0.00    0.00       1/12          QuadraticHashTable<8>::~QuadraticHashTable() [105]
+                0.00    0.00       1/12          QuadraticHashTable<7>::~QuadraticHashTable() [102]
+                0.00    0.00       1/12          QuadraticHashTable<6>::~QuadraticHashTable() [99]
+                0.00    0.00       1/12          QuadraticHashTable<5>::~QuadraticHashTable() [96]
+                0.00    0.00       1/12          QuadraticHashTable<4>::~QuadraticHashTable() [93]
+                0.00    0.00       1/12          QuadraticHashTable<3>::~QuadraticHashTable() [90]
+                0.00    0.00       1/12          QuadraticHashTable<2>::~QuadraticHashTable() [87]
+[62]     0.0    0.00    0.00      12         HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [123]
+[63]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN7SpellerC2EPPci [63]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [70]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [123]
+[64]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN8CPUTimerC2Ev [64]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [71]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [123]
+[65]     0.0    0.00    0.00       1         _GLOBAL__sub_I_maxRAM [65]
+                0.00    0.00       1/1           __static_initialization_and_destruction_0(int, int) [69]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[66]     0.0    0.00    0.00       1         readWrongs(int*, int, int, int, int&) [66]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[67]     0.0    0.00    0.00       1         checkAnswers(int*, int, int*, int) [67]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[68]     0.0    0.00    0.00       1         readDictionary(char*, char**, int) [68]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I_maxRAM [65]
+[69]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [69]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN7SpellerC2EPPci [63]
+[70]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [70]
+-----------------------------------------------
+                0.00    0.00       1/1           _GLOBAL__sub_I__ZN8CPUTimerC2Ev [64]
+[71]     0.0    0.00    0.00       1         __static_initialization_and_destruction_0(int, int) [71]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[72]     0.0    0.00    0.00       1         cleanup(char**, char*, char**, int*, int*) [72]
+                0.00    0.00       5/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[73]     0.0    0.00    0.00       1         QuadraticHashTable<10>::QuadraticHashTable(int) [73]
+                0.00    0.00    2648/2648        CharArray<10>::CharArray() [47]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[74]     0.0    0.00    0.00       1         QuadraticHashTable<10>::~QuadraticHashTable() [74]
+                0.00    0.00       1/1           QuadraticHashTable<10>::~QuadraticHashTable() [75]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<10>::~QuadraticHashTable() [74]
+[75]     0.0    0.00    0.00       1         QuadraticHashTable<10>::~QuadraticHashTable() [75]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[76]     0.0    0.00    0.00       1         QuadraticHashTable<11>::QuadraticHashTable(int) [76]
+                0.00    0.00    1567/1567        CharArray<11>::CharArray() [48]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[77]     0.0    0.00    0.00       1         QuadraticHashTable<11>::~QuadraticHashTable() [77]
+                0.00    0.00       1/1           QuadraticHashTable<11>::~QuadraticHashTable() [78]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<11>::~QuadraticHashTable() [77]
+[78]     0.0    0.00    0.00       1         QuadraticHashTable<11>::~QuadraticHashTable() [78]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[79]     0.0    0.00    0.00       1         QuadraticHashTable<12>::QuadraticHashTable(int) [79]
+                0.00    0.00     217/217         CharArray<12>::CharArray() [54]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[80]     0.0    0.00    0.00       1         QuadraticHashTable<12>::~QuadraticHashTable() [80]
+                0.00    0.00       1/1           QuadraticHashTable<12>::~QuadraticHashTable() [81]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<12>::~QuadraticHashTable() [80]
+[81]     0.0    0.00    0.00       1         QuadraticHashTable<12>::~QuadraticHashTable() [81]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[82]     0.0    0.00    0.00       1         QuadraticHashTable<13>::QuadraticHashTable(int) [82]
+                0.00    0.00      42/42          CharArray<13>::CharArray() [56]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[83]     0.0    0.00    0.00       1         QuadraticHashTable<13>::~QuadraticHashTable() [83]
+                0.00    0.00       1/1           QuadraticHashTable<13>::~QuadraticHashTable() [84]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<13>::~QuadraticHashTable() [83]
+[84]     0.0    0.00    0.00       1         QuadraticHashTable<13>::~QuadraticHashTable() [84]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[85]     0.0    0.00    0.00       1         QuadraticHashTable<2>::QuadraticHashTable(int) [85]
+                0.00    0.00    5735/5735        CharArray<2>::CharArray() [43]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[86]     0.0    0.00    0.00       1         QuadraticHashTable<2>::~QuadraticHashTable() [86]
+                0.00    0.00       1/1           QuadraticHashTable<2>::~QuadraticHashTable() [87]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<2>::~QuadraticHashTable() [86]
+[87]     0.0    0.00    0.00       1         QuadraticHashTable<2>::~QuadraticHashTable() [87]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[88]     0.0    0.00    0.00       1         QuadraticHashTable<3>::QuadraticHashTable(int) [88]
+                0.00    0.00   20722/20722       CharArray<3>::CharArray() [35]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[89]     0.0    0.00    0.00       1         QuadraticHashTable<3>::~QuadraticHashTable() [89]
+                0.00    0.00       1/13          operator delete(void*) [59]
+                0.00    0.00       1/1           QuadraticHashTable<3>::~QuadraticHashTable() [90]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<3>::~QuadraticHashTable() [89]
+[90]     0.0    0.00    0.00       1         QuadraticHashTable<3>::~QuadraticHashTable() [90]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[91]     0.0    0.00    0.00       1         QuadraticHashTable<4>::QuadraticHashTable(int) [91]
+                0.00    0.00   97002/97002       CharArray<4>::CharArray() [26]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[92]     0.0    0.00    0.00       1         QuadraticHashTable<4>::~QuadraticHashTable() [92]
+                0.00    0.00       1/1           QuadraticHashTable<4>::~QuadraticHashTable() [93]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<4>::~QuadraticHashTable() [92]
+[93]     0.0    0.00    0.00       1         QuadraticHashTable<4>::~QuadraticHashTable() [93]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[94]     0.0    0.00    0.00       1         QuadraticHashTable<5>::QuadraticHashTable(int) [94]
+                0.00    0.00   68861/68861       CharArray<5>::CharArray() [32]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[95]     0.0    0.00    0.00       1         QuadraticHashTable<5>::~QuadraticHashTable() [95]
+                0.00    0.00       1/1           QuadraticHashTable<5>::~QuadraticHashTable() [96]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<5>::~QuadraticHashTable() [95]
+[96]     0.0    0.00    0.00       1         QuadraticHashTable<5>::~QuadraticHashTable() [96]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[97]     0.0    0.00    0.00       1         QuadraticHashTable<6>::QuadraticHashTable(int) [97]
+                0.00    0.00  124192/124192      CharArray<6>::CharArray() [23]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[98]     0.0    0.00    0.00       1         QuadraticHashTable<6>::~QuadraticHashTable() [98]
+                0.00    0.00       1/1           QuadraticHashTable<6>::~QuadraticHashTable() [99]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<6>::~QuadraticHashTable() [98]
+[99]     0.0    0.00    0.00       1         QuadraticHashTable<6>::~QuadraticHashTable() [99]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[100]    0.0    0.00    0.00       1         QuadraticHashTable<7>::QuadraticHashTable(int) [100]
+                0.00    0.00   72231/72231       CharArray<7>::CharArray() [31]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[101]    0.0    0.00    0.00       1         QuadraticHashTable<7>::~QuadraticHashTable() [101]
+                0.00    0.00       1/1           QuadraticHashTable<7>::~QuadraticHashTable() [102]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<7>::~QuadraticHashTable() [101]
+[102]    0.0    0.00    0.00       1         QuadraticHashTable<7>::~QuadraticHashTable() [102]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[103]    0.0    0.00    0.00       1         QuadraticHashTable<8>::QuadraticHashTable(int) [103]
+                0.00    0.00   17664/17664       CharArray<8>::CharArray() [36]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[104]    0.0    0.00    0.00       1         QuadraticHashTable<8>::~QuadraticHashTable() [104]
+                0.00    0.00       1/1           QuadraticHashTable<8>::~QuadraticHashTable() [105]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<8>::~QuadraticHashTable() [104]
+[105]    0.0    0.00    0.00       1         QuadraticHashTable<8>::~QuadraticHashTable() [105]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::Speller(char**, int) [8]
+[106]    0.0    0.00    0.00       1         QuadraticHashTable<9>::QuadraticHashTable(int) [106]
+                0.00    0.00   16255/16255       CharArray<9>::CharArray() [38]
+                0.00    0.00       1/12          HashTable::HashTable() [61]
+                0.00    0.00       1/18          operator new[](unsigned long) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           Speller::~Speller() [109]
+[107]    0.0    0.00    0.00       1         QuadraticHashTable<9>::~QuadraticHashTable() [107]
+                0.00    0.00       1/1           QuadraticHashTable<9>::~QuadraticHashTable() [108]
+                0.00    0.00       1/13          operator delete(void*) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           QuadraticHashTable<9>::~QuadraticHashTable() [107]
+[108]    0.0    0.00    0.00       1         QuadraticHashTable<9>::~QuadraticHashTable() [108]
+                0.00    0.00       1/18          operator delete[](void*) [57]
+                0.00    0.00       1/12          HashTable::~HashTable() [62]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[109]    0.0    0.00    0.00       1         Speller::~Speller() [109]
+                0.00    0.00       1/1           QuadraticHashTable<13>::~QuadraticHashTable() [83]
+                0.00    0.00       1/1           QuadraticHashTable<12>::~QuadraticHashTable() [80]
+                0.00    0.00       1/1           QuadraticHashTable<11>::~QuadraticHashTable() [77]
+                0.00    0.00       1/1           QuadraticHashTable<10>::~QuadraticHashTable() [74]
+                0.00    0.00       1/1           QuadraticHashTable<9>::~QuadraticHashTable() [107]
+                0.00    0.00       1/1           QuadraticHashTable<8>::~QuadraticHashTable() [104]
+                0.00    0.00       1/1           QuadraticHashTable<7>::~QuadraticHashTable() [101]
+                0.00    0.00       1/1           QuadraticHashTable<6>::~QuadraticHashTable() [98]
+                0.00    0.00       1/1           QuadraticHashTable<5>::~QuadraticHashTable() [95]
+                0.00    0.00       1/1           QuadraticHashTable<4>::~QuadraticHashTable() [92]
+                0.00    0.00       1/1           QuadraticHashTable<3>::~QuadraticHashTable() [89]
+                0.00    0.00       1/1           QuadraticHashTable<2>::~QuadraticHashTable() [86]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[110]    0.0    0.00    0.00       1         CPUTimer::cur_CPUTime() [110]
+-----------------------------------------------
+                0.00    0.00       1/1           main [1]
+[111]    0.0    0.00    0.00       1         CPUTimer::CPUTimer() [111]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [63] _GLOBAL__sub_I__ZN7SpellerC2EPPci [91] QuadraticHashTable<4>::QuadraticHashTable(int) [32] CharArray<5>::CharArray()
+  [64] _GLOBAL__sub_I__ZN8CPUTimerC2Ev [92] QuadraticHashTable<4>::~QuadraticHashTable() [23] CharArray<6>::CharArray()
+  [65] _GLOBAL__sub_I_maxRAM  [93] QuadraticHashTable<4>::~QuadraticHashTable() [31] CharArray<7>::CharArray()
+  [66] readWrongs(int*, int, int, int, int&) [13] QuadraticHashTable<5>::insert(char const*, unsigned int) [36] CharArray<8>::CharArray()
+  [67] checkAnswers(int*, int, int*, int) [94] QuadraticHashTable<5>::QuadraticHashTable(int) [38] CharArray<9>::CharArray()
+   [6] readDocument(char**, int, int, int) [95] QuadraticHashTable<5>::~QuadraticHashTable() [61] HashTable::HashTable()
+  [68] readDictionary(char*, char**, int) [96] QuadraticHashTable<5>::~QuadraticHashTable() [62] HashTable::~HashTable()
+  [69] __static_initialization_and_destruction_0(int, int) [12] QuadraticHashTable<6>::insert(char const*, unsigned int) [40] QuadraticHashTable<10>::find(char const*, unsigned int) const
+  [70] __static_initialization_and_destruction_0(int, int) [97] QuadraticHashTable<6>::QuadraticHashTable(int) [39] QuadraticHashTable<10>::findPos(char const*, unsigned int) const
+  [71] __static_initialization_and_destruction_0(int, int) [98] QuadraticHashTable<6>::~QuadraticHashTable() [42] QuadraticHashTable<11>::find(char const*, unsigned int) const
+  [72] cleanup(char**, char*, char**, int*, int*) [99] QuadraticHashTable<6>::~QuadraticHashTable() [41] QuadraticHashTable<11>::findPos(char const*, unsigned int) const
+  [52] QuadraticHashTable<10>::insert(char const*, unsigned int) [37] QuadraticHashTable<7>::insert(char const*, unsigned int) [51] QuadraticHashTable<12>::find(char const*, unsigned int) const
+  [73] QuadraticHashTable<10>::QuadraticHashTable(int) [100] QuadraticHashTable<7>::QuadraticHashTable(int) [50] QuadraticHashTable<12>::findPos(char const*, unsigned int) const
+  [74] QuadraticHashTable<10>::~QuadraticHashTable() [101] QuadraticHashTable<7>::~QuadraticHashTable() [34] QuadraticHashTable<2>::find(char const*, unsigned int) const
+  [75] QuadraticHashTable<10>::~QuadraticHashTable() [102] QuadraticHashTable<7>::~QuadraticHashTable() [33] QuadraticHashTable<2>::findPos(char const*, unsigned int) const
+  [53] QuadraticHashTable<11>::insert(char const*, unsigned int) [45] QuadraticHashTable<8>::insert(char const*, unsigned int) [25] QuadraticHashTable<3>::find(char const*, unsigned int) const
+  [76] QuadraticHashTable<11>::QuadraticHashTable(int) [103] QuadraticHashTable<8>::QuadraticHashTable(int) [24] QuadraticHashTable<3>::findPos(char const*, unsigned int) const
+  [77] QuadraticHashTable<11>::~QuadraticHashTable() [104] QuadraticHashTable<8>::~QuadraticHashTable() [3] QuadraticHashTable<4>::find(char const*, unsigned int) const
+  [78] QuadraticHashTable<11>::~QuadraticHashTable() [105] QuadraticHashTable<8>::~QuadraticHashTable() [5] QuadraticHashTable<4>::findPos(char const*, unsigned int) const
+  [55] QuadraticHashTable<12>::insert(char const*, unsigned int) [46] QuadraticHashTable<9>::insert(char const*, unsigned int) [10] QuadraticHashTable<5>::find(char const*, unsigned int) const
+  [79] QuadraticHashTable<12>::QuadraticHashTable(int) [106] QuadraticHashTable<9>::QuadraticHashTable(int) [9] QuadraticHashTable<5>::findPos(char const*, unsigned int) const
+  [80] QuadraticHashTable<12>::~QuadraticHashTable() [107] QuadraticHashTable<9>::~QuadraticHashTable() [7] QuadraticHashTable<6>::find(char const*, unsigned int) const
+  [81] QuadraticHashTable<12>::~QuadraticHashTable() [108] QuadraticHashTable<9>::~QuadraticHashTable() [4] QuadraticHashTable<6>::findPos(char const*, unsigned int) const
+  [82] QuadraticHashTable<13>::QuadraticHashTable(int) [2] Speller::check(char**, int, int*, int*) [22] QuadraticHashTable<7>::find(char const*, unsigned int) const
+  [83] QuadraticHashTable<13>::~QuadraticHashTable() [8] Speller::Speller(char**, int) [21] QuadraticHashTable<7>::findPos(char const*, unsigned int) const
+  [84] QuadraticHashTable<13>::~QuadraticHashTable() [109] Speller::~Speller() [28] QuadraticHashTable<8>::find(char const*, unsigned int) const
+  [49] QuadraticHashTable<2>::insert(char const*, unsigned int) [110] CPUTimer::cur_CPUTime() [27] QuadraticHashTable<8>::findPos(char const*, unsigned int) const
+  [85] QuadraticHashTable<2>::QuadraticHashTable(int) [111] CPUTimer::CPUTimer() [30] QuadraticHashTable<9>::find(char const*, unsigned int) const
+  [86] QuadraticHashTable<2>::~QuadraticHashTable() [47] CharArray<10>::CharArray() [29] QuadraticHashTable<9>::findPos(char const*, unsigned int) const
+  [87] QuadraticHashTable<2>::~QuadraticHashTable() [48] CharArray<11>::CharArray() [57] operator delete[](void*)
+  [44] QuadraticHashTable<3>::insert(char const*, unsigned int) [54] CharArray<12>::CharArray() [59] operator delete(void*)
+  [88] QuadraticHashTable<3>::QuadraticHashTable(int) [56] CharArray<13>::CharArray() [58] operator new[](unsigned long)
+  [89] QuadraticHashTable<3>::~QuadraticHashTable() [43] CharArray<2>::CharArray() [60] operator new(unsigned long)
+  [90] QuadraticHashTable<3>::~QuadraticHashTable() [35] CharArray<3>::CharArray()
+  [11] QuadraticHashTable<4>::insert(char const*, unsigned int) [26] CharArray<4>::CharArray()

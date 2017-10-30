@@ -1,0 +1,181 @@
+// Author Sean Davis
+#include "router.h"
+#include "BinaryHeap.h"
+#include <iostream>
+
+using namespace std;
+
+Router:: Router(const Map1000 *map, int w) : heap(1000000), width(w)
+{
+  top = 0;
+  Dij = new DijNode*[width];
+  for(int i = 0; i < width; i++)
+  {
+    Dij[i] = new DijNode[width];
+    for(int j = 0; j < width; j++)
+      Dij[i][j].elevation = map->map1000[i][j];
+  } // for i;
+}
+
+Router::~Router()
+{
+  for(int i = 0; i < width; i++)
+    delete [] Dij[i];
+
+  delete [] Dij;
+  delete [] connected;
+} // ~Router()
+
+void Router::storePath(short x, short y, Edge *paths, int &pathCount)
+{
+  short pvx, pvy;
+  Dij[x][y].cost = 0;  // This is a city
+  Dij[x][y].known = KNOWN;
+  heap.insert(HeapNode(x, y, 0));
+  pvx = Dij[x][y].pvx;
+  pvy = Dij[x][y].pvy;
+
+  while(Dij[pvx][pvy].cost > 0)
+  {
+    Dij[pvx][pvy].cost = 0;
+    Dij[pvx][pvy].known = UNKNOWN;
+    heap.insert(HeapNode(pvx, pvy, 0));
+    paths[pathCount].startX = x;
+    paths[pathCount].endX = pvx;
+    paths[pathCount].startY = y;
+    paths[pathCount++].endY = pvy;
+    x = pvx;
+    y = pvy;
+    pvx = Dij[x][y].pvx;
+    pvy = Dij[x][y].pvy;
+  }
+
+  paths[pathCount].startX = x;
+  paths[pathCount].endX = pvx;
+  paths[pathCount].startY = y;
+  paths[pathCount++].endY = pvy;
+
+} // storePath()
+
+void Router::shortestPath(short *x3, short *y3)
+{
+  HeapNode node;
+  short x, y, x2, y2, startX, endX, startY, endY;
+  int cost, cost2;
+  int elevation;
+  DijNode *ptr;
+
+  heap.deleteMin(node);
+  x = node.x;
+  y = node.y;
+
+
+  while(true)
+  {
+
+    cost = Dij[x][y].cost;
+    startX = (0 > x - 1) ? 0 : x - 1;
+    endX = (width - 1 < x + 1) ? width - 1 : x + 1;
+    startY = (0 > y - 1) ? 0 : y - 1;
+    endY = (width - 1 < y + 1) ? width - 1 : y + 1;
+    elevation = Dij[x][y].elevation;
+    Dij[x][y].known = KNOWN;
+
+
+    for(x2 = startX; x2 <= endX; x2++)
+      for(y2 = startY; y2 <= endY; y2++)
+        if((x2 != x || y2 != y) ) // && Dij[x2][y2].known < 1)
+        {
+          ptr = & Dij[x2][y2];
+
+           cost2 = cost + (elevation - ptr->elevation)
+            * (elevation - ptr->elevation) + 10;
+
+          if(ptr->cost > cost2)
+          {
+            ptr->pvx = x;
+            ptr->pvy = y;
+
+            if(heap.position[x2 * 1000 + y2] == -1)  // not in heap
+              heap.insert(HeapNode(x2, y2, cost2));
+            else
+              heap.decreaseKey(HeapNode(x2, y2, cost2));
+
+            ptr->cost = cost2;
+          } // if an improved cost
+        } // if not this one
+
+    do
+    {
+      heap.deleteMin(node);
+      x = node.x;
+      y = node.y;
+
+     } while(Dij[x][y].cost < node.cost);
+
+    if(Dij[x][y].known == CITY)
+    {
+      *x3 = x;
+      *y3 = y;
+      return;
+    }
+
+  } // while true
+} // ShortestPath()
+
+
+void Router::findRoutes(const CityPos *cityPos, int cityCount, Edge *paths, int &pathCount)
+{
+  pathCount = 0;
+  short x, y;
+  int connectedCount = 1;
+  connected = new bool[cityCount];
+
+  for(int i = 0; i < cityCount; i++)
+  {
+    Dij[cityPos[i].x][cityPos[i].y].known = CITY; // mark city
+    connected[i] = false;
+  } // for i
+
+
+  connected[0] = true;
+  Dij[cityPos[0].x][cityPos[0].y].cost = 0;
+  heap.insert(HeapNode(cityPos[0].x, cityPos[0].y, 0));
+
+  while(connectedCount < cityCount)
+  {
+    shortestPath(&x, &y);
+    storePath(x, y, paths, pathCount);
+
+/*    for(int i = 0; i < top; i++)
+    {
+//      if( Dij[stack[i].x][stack[i].y].cost > 0)
+//      {
+//        Dij[stack[i].x][stack[i].y].known = UNKNOWN;
+        heap.insert(HeapNode(stack[i].x, stack[i].y, Dij[stack[i].x][stack[i].y].cost));
+ //       Dij[stack[i].x][stack[i].y].cost = 0x2FFFFFFF;
+ //     }
+    }
+
+    top = 0;
+ */
+    for(int i = 0; i < cityCount; i++)
+    {
+ //     x2 = cityPos[i].x;
+ //     y2 = cityPos[i].y;
+
+      //cout << "City " <<  i << " " << Dij[x2][y2].cost << " " <<   (int) Dij[x2][y2].known  << endl;
+      if(cityPos[i].x == x && cityPos[i].y == y )
+      {
+        Dij[cityPos[i].x][cityPos[i].y].cost = 0; // mark connected city
+        connected[i] = true;
+        connectedCount++;
+        // cout << connectedCount << endl;
+      }
+      else
+        if( Dij[cityPos[i].x][cityPos[i].y].known == UNKNOWN)
+          Dij[cityPos[i].x][cityPos[i].y].known = CITY;
+    } // for i
+  } // while not all cities connected
+
+}

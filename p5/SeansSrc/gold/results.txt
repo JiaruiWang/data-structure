@@ -1,0 +1,17 @@
+Makefile optimization check: 
+OK
+Testing  map-20-1000-7.txt: 
+CPU time: 0.471758 Total cost: 63764
+ 
+Testing  map-20-1000-8.txt: 
+CPU time: 0.435642 Total cost: 64903
+ 
+Testing  map-20-1000-9.txt: 
+CPU time: 0.502602 Total cost: 73944
+ 
+You had no memory leaks, nor seg faults, so no points will be deducted.
+
+Total CPU Time: Yours 1.41  Sean's: 1.2 so your score is 13
+
+Path Length: Yours 202611  Sean's: 218581 so your score is 17
+Total score: 13 + 17 + 20 + 0 + 0 = 50

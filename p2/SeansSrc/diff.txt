@@ -1,0 +1,8 @@
+1,3c1,3
+< ==27198==    definitely lost: 240 bytes in 11 blocks
+< ==27198==    indirectly lost: 60 bytes in 2 blocks
+< ==27198==      possibly lost: 0 bytes in 0 blocks
+---
+> definitely lost: 240 bytes in 11
+> indirectly lost: 60 bytes in 2
+> possibly lost: 0 bytes in 0

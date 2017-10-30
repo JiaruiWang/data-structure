@@ -1,0 +1,17 @@
+Error 00030. 0x140610 (Thread 0x0BF0):
+Access underrun: Attempt to access 4 byte(s) at 0x0430BBE4-246536, that is at
+ offset 0-246536 in heap block 0x0430BBE4 (size 12000).
+Call Tree:
+   0x0040C956(=RouteRunner.exe:0x01:00B956) C:\f07\60\cpp\p5\gold\router.cpp#38
+   0x0040DBC1(=RouteRunner.exe:0x01:00CBC1) C:\f07\60\cpp\p5\gold\router.cpp#148
+   0x00403E34(=RouteRunner.exe:0x01:002E34) C:\f07\60\cpp\p5\gold\RouterRunner.cpp#255
+   0x3266FFD6(=CC3260.DLL:0x01:06EFD6)
+
+The object array (0x042CE330) [size: 12000 bytes] was created with new[]
+Call Tree:
+   0x0040E78D(=RouteRunner.exe:0x01:00D78D)
+   0x0040C18E(=RouteRunner.exe:0x01:00B18E) C:\f07\60\cpp\p5\gold\router.cpp#14
+   0x00403DBF(=RouteRunner.exe:0x01:002DBF) C:\f07\60\cpp\p5\gold\RouterRunner.cpp#249
+   0x3266FFD6(=CC3260.DLL:0x01:06EFD6)
+
+------------------------------------------

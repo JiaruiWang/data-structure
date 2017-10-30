@@ -1,0 +1,18 @@
+Makefile optimization check: 
+OK
+Testing  Dict-100000-2000000-7.txt: 
+CPU Time: 0.133595 Real RAM: 981312
+ 
+Testing  Dict-100000-2000000-8.txt: 
+CPU Time: 0.166891 Real RAM: 981312
+ 
+Testing  Dict-100000-2000000-9.txt: 
+CPU Time: 0.13495 Real RAM: 981312
+ 
+You had no memory leaks, so no points will be deducted.
+
+Total CPU Time: Yours 0.435436  Sean's: 0.56 so your score is 20
+
+Total RAM: Yours 2943936  Sean's: 3556152 so your score is 19
+Final score > 55, so Final score = 55
+Total score: 20 + 19 + 20 + 0 + 0 = 55
